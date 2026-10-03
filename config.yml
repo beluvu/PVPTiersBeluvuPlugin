@@ -1,0 +1,43 @@
+# Categories (kits/gamemodes). Letters, digits, _ and - only (no dots).
+categories: [Sword, Crystal, Pot, NethPot, SMP, Axe, UHC, Mace]
+
+display:
+  enabled: true
+  # What is shown above the head: the player's HIGHEST tier.
+  # Placeholders: {color} {category} {tier}
+  format: '{color}{category} {tier}'
+  # Height above the player's head (blocks). Raise it if it overlaps the nametag.
+  y-offset: 0.85
+
+tier-colors:
+  HT1: '&c&l'
+  LT1: '&c'
+  HT2: '&6&l'
+  LT2: '&6'
+  HT3: '&e'
+  LT3: '&e'
+  HT4: '&a'
+  LT4: '&a'
+  HT5: '&7'
+  LT5: '&8'
+
+messages:
+  prefix: '&8[&6Tiers&8] '
+  no-permission: '&cУ тебя нет прав.'
+  player-not-found: '&cИгрок не найден (он должен был хотя бы раз зайти на сервер).'
+  category-unknown: '&cТакой категории нет. Доступные: &f{categories}'
+  tier-unknown: '&cТакого тира нет. Доступные: &f{tiers}'
+  set: '&aИгроку &e{player}&a поставлен тир &e{tier}&a в категории &e{category}&a.'
+  removed: '&aТир игрока &e{player}&a удалён ({category}).'
+  nothing-to-remove: '&cУ игрока нет такого тира.'
+  list-header: '&6Тиры игрока &e{player}&6:'
+  list-line: '&7{category}: &r{color}{tier}'
+  list-empty: '&7У игрока пока нет тиров.'
+  top-header-all: '&6Топ игроков (общий рейтинг):'
+  top-header-category: '&6Топ по категории &e{category}&6:'
+  top-line-all: '&e{pos}. &f{player} &7- &6{points} очк.'
+  top-line-category: '&e{pos}. &f{player} &7- &r{color}{tier}'
+  top-empty: '&7Пока никого в рейтинге.'
+  usage-tierlist: '&7Использование: &f/tierlist <ник>'
+  usage-settier: '&7Использование: &f/settier <ник> <категория> <тир>'
+  usage-removetier: '&7Использование: &f/removetier <ник> <категория|all>'

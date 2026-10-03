@@ -1,0 +1,24 @@
+name: BTiers
+version: '${project.version}'
+main: dev.beluvu.btiers.Main
+api-version: '1.21'
+authors: [beluvu]
+description: Tier list (LT5-HT1) with tier shown above players' heads.
+commands:
+  tierlist:
+    description: Show a player's tiers.
+    usage: /tierlist [player]
+  tiertop:
+    description: Top players by tiers.
+    usage: /tiertop [category]
+  settier:
+    description: Set a player's tier (admin).
+    usage: /settier <player> <category> <tier>
+  removetier:
+    description: Remove a player's tier (admin).
+    usage: /removetier <player> <category|all>
+permissions:
+  btiers.use:
+    default: true
+  btiers.admin:
+    default: op
